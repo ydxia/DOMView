@@ -33,10 +33,10 @@ let DOMUtil = {
   },
 
   setAttr(el, attr, val) {
-    attr = attr.toLowerCase();
-
     if (attr == 'style') {
       DOMUtil.setStyles(el, val /* styleMap */);
+    } else {
+      el[attr] = val;
     }
   },
 

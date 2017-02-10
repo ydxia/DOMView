@@ -15,10 +15,13 @@
     "babel-preset-es2015": "6.9.x"
 	},
 	"devDependencies": {
-    "babel-cli": "^6.0.0"
+    "babel-cli": "^6.0.0",
+    "babel-loader": "6.2.x",
+    "webpack": "1.13.x"
   },
   "scripts": {
     "prepublish": "npm run transpile",
-    "transpile": "babel domview-babel.js --out-file domview.js --presets=es2015"
+    "transpile": "babel domview-babel.js --out-file domview.js --presets=es2015",
+    "build-example": "node example/build-example.js"
   }
 }
