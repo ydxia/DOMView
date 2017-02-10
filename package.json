@@ -18,6 +18,7 @@
     "babel-cli": "^6.0.0"
   },
   "scripts": {
-    "prepublish": "babel domview-babel.js --out-file domview.js --presets=es2015"
+    "prepublish": "npm run transpile",
+    "transpile": "babel domview-babel.js --out-file domview.js --presets=es2015"
   }
 }
