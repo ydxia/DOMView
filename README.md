@@ -6,7 +6,7 @@ An example for the implementation of a view class can be found in `example/Slide
 
 ## Example
 
-```
+```javascript
 import DOMView from 'domview';
 
 // Utilites for modifying and creating new HTMLElements
