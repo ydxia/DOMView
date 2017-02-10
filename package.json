@@ -1,5 +1,5 @@
 {
-  "name": "DOMView",
+  "name": "domview",
   "version": "0.0.1",
   "description": "A simple sketching tool for use in web browsers.",
   "license": "GPL-3.0",
