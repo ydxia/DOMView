@@ -59,8 +59,7 @@ let DOMUtil = {
   appendChild(el, child) {
     if (typeof child === 'string' || typeof child == 'number') {
       child = DOMUtil.text(child);
-    }
-    if (child instanceof DOMView) {
+    } else if (child instanceof DOMView) {
       child = child.getRoot();
     }
     el.appendChild(child);
@@ -71,6 +70,24 @@ let DOMUtil = {
    */
   appendChildren(el, children) {
     children.forEach(DOMUtil.appendChild.bind(null, el));
+  },
+
+  /**
+   * Append a child node to the view. Also accepts DOMView objects
+   * @param {string|number|Node|DOMView} child
+   */
+  removeChild(el, child) {
+    if (child instanceof DOMView) {
+      child = child.getRoot();
+    }
+    el.removeChild(child);
+  },
+
+  /**
+   * Convenience method for removing multiple children
+   */
+  removeChildren(el, children) {
+    children.forEach(DOMUtil.removeChild.bind(null, el));
   },
 
   hasClass(el, cls) {
@@ -155,6 +172,16 @@ class DOMView {
 
   appendChildren(children) {
     DOMUtil.appendChildren(this.root, children);
+    return this;
+  }
+
+  removeChild(child) {
+    DOMUtil.removeChild(this.root, child);
+    return this;
+  }
+
+  removeChildren(children) {
+    DOMUtil.removeChildren(this.root, children);
     return this;
   }
 
