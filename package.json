@@ -1,6 +1,6 @@
 {
   "name": "domview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple sketching tool for use in web browsers.",
   "license": "GPL-3.0",
   "repository": "https://github.com/ydxia/DOMView",
