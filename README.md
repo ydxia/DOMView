@@ -2,7 +2,7 @@
 
 A lightweight DOM wrapper for creating object-oriented view classes!
 
-An example for the implementation of a view class can be found in `example/Slider.js`. You see a [live demo here](http://htmlpreview.github.io/?https://github.com/ydxia/domview/blob/master/example/static/index.html).
+An example for the implementation of a view class can be found in `example/Slider.js`. You can see a [live demo here](http://htmlpreview.github.io/?https://github.com/ydxia/domview/blob/master/example/static/index.html).
 
 ## Usage
 
