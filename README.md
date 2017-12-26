@@ -56,7 +56,7 @@ And that's all there is, folks!
 Here is a list of other handy convenience methods:
 
 * `DOMView.prototype.appendChild(child)`/`DOMUtil.appendChild(element, child)`: Appends a `DOMView`, `HTMLElement`, string or number (as text) to the view or element
-* `DOMView.prototype.appendChild(children)`/`DOMUtil.appendChild(element, children)`: Same as `appendChild()` but for an array of objects
+* `DOMView.prototype.appendChildren(children)`/`DOMUtil.appendChildren(element, children)`: Same as `appendChild()` but for an array of objects
 * `DOMView.prototype.removeChild(child)`/`DOMUtil.removeChild(element, child)`: Removes a `DOMView` or `HTMLElement` from the containing view or element
 * `DOMView.prototype.removeChildren(children)`/`DOMUtil.removeChild(element, children)`: Same as `removeChild()` but for an array of objects
 * `DOMView.prototype.setAttr(attr, value)`/`DOMUtil.setAttr(element, attr, value)`: Sets an attribute (e.g. className, id, etc.) on a view or element
